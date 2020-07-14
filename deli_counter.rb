@@ -1,8 +1,8 @@
 def line(array)
   if array.any?
     currenty_line = "The line is currently:"
-    array.each_with_index(1) do |name,index|
-      currenty_line << "#{index}. #{name}"
+    array.each_with_index do |name,index|
+      currenty_line << "#{index+1}. #{name}"
    end
     
    puts currenty_line
